@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Frequency of vowels and consonants</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <h1 class="title">Вычисление частот гласных и согласных в тексте</h1>
+  </div>
+</header>
+<main class="content">
+  <div class="container">
+    <h2 class="sub-title">Задание <br>по разработке клиент-серверного веб-приложения студента 1 курса магистратуры<br> Гладких Михаила
+      Владимировича, ФКН, ИВК
+      <br>2020 год</h2>
+    <form class="form">
+      <textarea 
+          id="text"
+          placeholder="Введите не менее 3 символов"
+      ></textarea>
+      <div class="btn-wrap">
+        <button disabled id="submit-btn">Вычислить</button>
+      </div>
+    </form>
+    <div id="result" class="result hide">
+      <h2 class="sub-title">Результат:</h2>
+      <div class="result-count">
+        <p>Гласных: <span id="vowels"></span></p>
+        <p>Согласных: <span id="consonants"></span></p>
+      </div>
+      <h3>Частота символов в тексте: </h3>
+      <div class="result-content" id="result-content"></div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
